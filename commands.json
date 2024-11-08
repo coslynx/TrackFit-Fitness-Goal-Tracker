@@ -1,0 +1,6 @@
+{
+  "commands": [
+    "npm install",
+    "next build"
+  ]
+}
