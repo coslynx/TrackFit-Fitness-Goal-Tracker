@@ -1,0 +1,61 @@
+/* src/styles/global.css */
+
+/* Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+body {
+  @apply font-sans text-gray-900 antialiased;
+  line-height: 1.5;
+}
+
+/* Color Palette */
+:root {
+  --primary-color: #007bff; /* Example primary color */
+  --secondary-color: #6c757d; /* Example secondary color */
+  --accent-color: #ffc107; /* Example accent color */
+  --error-color: #dc3545; /* Example error color */
+}
+
+/* Spacing */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Layout */
+body {
+  @apply bg-gray-100;
+  padding: 2rem;
+}
+
+/* Overall Aesthetics */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+/* Additional Styles (e.g., buttons, forms) */
+.button-primary {
+  @apply bg-primary text-white font-bold py-2 px-4 rounded;
+}
+
+.button-secondary {
+  @apply bg-secondary text-white font-bold py-2 px-4 rounded;
+}
+
+.form-input {
+  @apply border rounded px-3 py-2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+}
